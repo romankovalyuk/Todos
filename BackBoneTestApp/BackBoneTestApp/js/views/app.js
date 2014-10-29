@@ -28,7 +28,6 @@ app.AppView = Backbone.View.extend({
     },
 
     addOne: function (todo) {
-        debugger;
         var view = new app.TodoView({ model: todo });
         $('#todo-list').append(view.render().el);
     },
@@ -82,7 +81,7 @@ app.AppView = Backbone.View.extend({
         if (event.which !== ENTER_KEY || !this.$input.val().trim()) {
             return;
         }
-        app.Todos.add({ title: this.$input.val() });
+        app.Todos.create({ title: this.$input.val() });
         this.$input.val('');
     },
 
