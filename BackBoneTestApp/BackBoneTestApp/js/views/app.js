@@ -57,8 +57,9 @@ app.AppView = Backbone.View.extend({
             this.$main.hide();
             this.$footer.hide();
         }
-        
-        this.allCheckbox.checked = !remaining;
+
+       // debugger;
+       // this.allCheckbox.checked = !remaining;
     },
 
     filterOne: function (todo) {
@@ -91,10 +92,9 @@ app.AppView = Backbone.View.extend({
     },
 
     toggleAllComplete: function () {
-        var completed = this.allCheckbox.checked;
         app.Todos.each(function (todo) {
             todo.save({
-                'completed': completed
+                'completed': true
             });
         });
     }
