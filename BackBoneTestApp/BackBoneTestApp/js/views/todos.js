@@ -11,14 +11,14 @@ app.TodoView = Backbone.View.extend({
         'blur .edit': 'close',
         
 
-        "click .toggle": "togglecompleted",
+        "click .toggle": "toggleCompleted",
         "click .destroy": "clear"
     },
     
     initialize: function () {
         this.listenTo(this.model, 'change', this.render);
         
-        this.listenTo(this.model, 'destroy', this.remuve);
+        this.listenTo(this.model, 'destroy', this.remove);
         this.listenTo(this.model, 'visible', this.toggleVisible);
     },
     
@@ -63,16 +63,15 @@ app.TodoView = Backbone.View.extend({
     },
     
     toggleCompleted: function () {
-        debugger;
         this.model.toggle();
     },
     
     clear: function () {
-        debugger;
         this.model.destroy();
     },
     
-    remuve: function () {
-        app.Todos.remuve
+    remove: function () {
+        debugger;
+        app.Todos.remove();
     }
 })
