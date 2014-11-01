@@ -26,8 +26,7 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
-
+Icon
 # Thumbnails
 ._*
 
@@ -46,3 +45,6 @@ Temporary Items
 *.crc
 *.dat
 BackBoneTestApp/_ReSharper.BackBoneTestApp/PersistentCaches/LOCK
+*.log
+_ReSharper.*
+*.resharper
