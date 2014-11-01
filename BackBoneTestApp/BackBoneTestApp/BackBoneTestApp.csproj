@@ -215,6 +215,7 @@
     <Content Include="js\lib\jquery.js" />
     <Content Include="js\lib\underscore.js" />
     <Content Include="js\models\todo.js" />
+    <Content Include="js\routers\router.js" />
     <Content Include="js\views\app.js" />
     <Content Include="js\views\todos.js" />
     <Content Include="Web.config" />
@@ -228,7 +229,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="js\routers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

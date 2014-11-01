@@ -63,10 +63,12 @@ app.AppView = Backbone.View.extend({
     },
 
     filterOne: function (todo) {
+        debugger;
         todo.trigger('visible');
     },
 
     filterAll: function () {
+        debugger;
         app.Todos.each(this.filterOne, this);
     },
 

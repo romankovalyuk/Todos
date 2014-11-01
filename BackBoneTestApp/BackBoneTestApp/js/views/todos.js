@@ -23,7 +23,6 @@ app.TodoView = Backbone.View.extend({
     },
     
     render: function () {
-        debugger;
         this.$el.html(this.template(this.model.toJSON()));
 
         this.$el.toggleClass('completed', this.model.get('completed'));
@@ -53,12 +52,19 @@ app.TodoView = Backbone.View.extend({
     },
     
     toggleVisible: function () {
-        this.$el.toggleClass('hidden', this.isHidden());
+        debugger;
+        if (this.isHidden()) {
+            this.$el.hide();
+        }
+        else {
+            this.$el.show();
+        }
     },
     
     isHidden: function () {
+        debugger;
         var isCompleted = this.model.get('completed');
-        return ((isCompleted && app.TodoFilter === 'completed') ||
+        return ((!isCompleted && app.TodoFilter === 'completed') ||
             (isCompleted && app.TodoFilter === 'active'));
     },
     

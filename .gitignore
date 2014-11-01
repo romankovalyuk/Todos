@@ -41,3 +41,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+*.dll
+*.crc
+*.dat
+BackBoneTestApp/_ReSharper.BackBoneTestApp/PersistentCaches/LOCK
