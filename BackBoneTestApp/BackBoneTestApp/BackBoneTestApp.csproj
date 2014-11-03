@@ -119,7 +119,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="css\style.css" />
+    <Content Include="css\angular.css" />
     <Content Include="Global.asax" />
+    <Content Include="js\angular.js" />
     <Content Include="js\app.js" />
     <Content Include="js\bower_components\jquery\dist\jquery.js" />
     <Content Include="js\bower_components\jquery\dist\jquery.min.js" />
@@ -252,6 +254,9 @@
     <Content Include="js\bower_components\underscore\package.json" />
     <Content Include="js\bower_components\underscore\README.md" />
     <Content Include="js\bower_components\underscore\underscore-min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Angular.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace BackBoneTestApp.Controllers
 {
@@ -12,6 +8,11 @@ namespace BackBoneTestApp.Controllers
         // GET: /Home/
 
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult Angular()
         {
             return View();
         }
